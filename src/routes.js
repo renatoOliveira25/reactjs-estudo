@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home"
 import Assistir from "./pages/Assistir"
+import PageNotFound from "./pages/PageNotFound";
 
 function AppRoutes() {
     return (
@@ -8,6 +9,7 @@ function AppRoutes() {
             <Routes>
                 <Route path="/" element={ <Home /> }></Route>
                 <Route path="/assistir" element={ <Assistir /> }></Route>
+                <Route path="*" element={ <PageNotFound /> }></Route>
             </Routes>
         </BrowserRouter>
     );
