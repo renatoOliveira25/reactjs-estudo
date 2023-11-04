@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css"
 
 function Header() {
     return (
         <header className={styles.cabecalho}>
-            <span>Prime Movies</span>
+            <Link to="/">
+                <span>Prime Movies</span>
+            </Link>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Assistir</a>
+                <Link to="/">Home</Link>
+                <Link to="/assistir">Assistir</Link>
             </nav>
         </header>
     );
